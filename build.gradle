@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'skywolf46.wolfradle' version "1.1.5"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://projectlombok.org/edge-releases' }
+    maven {
+        url = uri("http://dja.kr:55201/lesson")
+        credentials {
+            username "lesson"
+            password "AqIOv/+5WZwKSv/W7pq68g2xPI2CgH96RKsmfT/7b9+GVtxBFI9NJYsZNyj5Yldi"
+        }
+    }
+}
+
+dependencies {
+    spigotApi("1.16.5")
+    compile files('C:\\Library\\cosmoapi.jar')
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
+
+test {
+    useJUnitPlatform()
+}

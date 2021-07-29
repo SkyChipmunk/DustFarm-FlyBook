@@ -1,0 +1,7 @@
+name: FiyBook
+version: 1.0-SNAPSHOT
+main: org.skychipmunk.flybook.FiyBook
+api-version: 1.13
+description: Plugin file generated with Wolfradle
+softdepend:
+  - CosmoAPI
